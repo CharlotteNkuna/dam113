@@ -8,5 +8,6 @@ export const routes: Routes = [
     {path: '', component: Home},
     {path: 'products', component: Products},
     {path: 'staff', component: Staff},
-    {path: 'contact', component: Contact}
+    {path: 'contact', component: Contact},
+    {path: '**', redirectTo: '', pathMatch: 'full'} //not found, redirect to home
 ];
