@@ -1,0 +1,6 @@
+2026-01-13 14:21:00,197: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2026-01-13 14:21:46,581: ERROR	pgadmin:	Failed to execute query (execute_scalar) for the server #1 - DB:postgres (Query-id: 8298721):
+Error Message:database "ems_db" is being accessed by other users
+There is 1 other session using the database.
+2026-01-13 14:57:02,562: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2026-01-13 15:02:05,213: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.

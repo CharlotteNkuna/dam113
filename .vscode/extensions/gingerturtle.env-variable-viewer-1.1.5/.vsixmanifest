@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
+		<Metadata>
+			<Identity Language="en-US" Id="env-variable-viewer" Version="1.1.5" Publisher="GingerTurtle" />
+			<DisplayName>Environment Variable Viewer - .env &amp; dotenv File Manager</DisplayName>
+			<Description xml:space="preserve">.env file viewer &amp; dotenv manager for VS Code. View, search, copy, export &amp; validate environment variables. Supports .env.local, .env.production, .env.development &amp; custom files. Tree view, quick pick, masking &amp; validation. React, Next.js, Vue, Angular, Svelte, Node.js, NestJS, Python, Docker &amp; Kubernetes.</Description>
+			<Tags>env,dotenv,.env,.env file,environment variables,env file,env viewer,dotenv viewer,env file viewer,env file browser,env browser,environment file viewer,env manager,env editor,.env editor,dotenv editor,dotenv manager,dotenv extension,dotenv plugin,dotenv support,dotenv tool,env inspector,env reader,configuration,environment variable manager,environment variable viewer,env file reader,env file manager,dotenv config,secrets,secret manager,api keys,api key viewer,api key manager,env.local,env.production,env.development,env.test,env.example,react env,node env,nextjs env,vite env,vue env,docker env,nestjs env,nuxt env,environment file,env variables,dotenv file,dotenv variables,process.env,export env,copy env,validate env,env validation,env export,env loader,env parser,devops,nodejs,react,nextjs,vue,angular,svelte,sveltekit,vite,nestjs,nuxt,nuxtjs,express,fastify,remix,astro,docker,kubernetes,twelve-factor,12-factor,keybindings,javascript,node,python,__sponsor_extension</Tags>
+			<Categories>Other,Programming Languages,Linters</Categories>
+			<GalleryFlags>Public</GalleryFlags>
+			
+			<Properties>
+				<Property Id="Microsoft.VisualStudio.Code.Engine" Value="^1.74.0" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionDependencies" Value="" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionPack" Value="" />
+				<Property Id="Microsoft.VisualStudio.Code.ExtensionKind" Value="workspace" />
+				<Property Id="Microsoft.VisualStudio.Code.LocalizedLanguages" Value="" />
+				<Property Id="Microsoft.VisualStudio.Code.EnabledApiProposals" Value="" />
+				
+				<Property Id="Microsoft.VisualStudio.Code.ExecutesCode" Value="true" />
+				<Property Id="Microsoft.VisualStudio.Code.SponsorLink" Value="https://buymeacoffee.com/gingerturtle" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Source" Value="https://github.com/Goldenvikingsunset/Specific-.env-File-Variable-ViewerCopier.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Getstarted" Value="https://github.com/Goldenvikingsunset/Specific-.env-File-Variable-ViewerCopier.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.GitHub" Value="https://github.com/Goldenvikingsunset/Specific-.env-File-Variable-ViewerCopier.git" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Support" Value="https://github.com/Goldenvikingsunset/Specific-.env-File-Variable-ViewerCopier/issues" />
+				<Property Id="Microsoft.VisualStudio.Services.Links.Learn" Value="https://github.com/Goldenvikingsunset/Specific-.env-File-Variable-ViewerCopier#readme" />
+				<Property Id="Microsoft.VisualStudio.Services.Branding.Color" Value="#1e1e1e" />
+				<Property Id="Microsoft.VisualStudio.Services.Branding.Theme" Value="dark" />
+				<Property Id="Microsoft.VisualStudio.Services.GitHubFlavoredMarkdown" Value="true" />
+				<Property Id="Microsoft.VisualStudio.Services.Content.Pricing" Value="Free"/>
+
+				
+				
+			</Properties>
+			<License>extension/LICENSE.txt</License>
+			<Icon>extension/images/icon.png</Icon>
+		</Metadata>
+		<Installation>
+			<InstallationTarget Id="Microsoft.VisualStudio.Code"/>
+		</Installation>
+		<Dependencies/>
+		<Assets>
+			<Asset Type="Microsoft.VisualStudio.Code.Manifest" Path="extension/package.json" Addressable="true" />
+			<Asset Type="Microsoft.VisualStudio.Services.Content.Details" Path="extension/README.md" Addressable="true" />
+<Asset Type="Microsoft.VisualStudio.Services.Content.Changelog" Path="extension/CHANGELOG.md" Addressable="true" />
+<Asset Type="Microsoft.VisualStudio.Services.Content.License" Path="extension/LICENSE.txt" Addressable="true" />
+<Asset Type="Microsoft.VisualStudio.Services.Icons.Default" Path="extension/images/icon.png" Addressable="true" />
+		</Assets>
+	</PackageManifest>

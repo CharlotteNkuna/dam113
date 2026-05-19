@@ -1,0 +1,199 @@
+2025-11-11 14:21:35,872: WARNING	pgadmin:	Connection to database server (#1) for the connection - 'CONN:7059257' has been lost.
+2025-11-11 14:21:35,876: ERROR	pgadmin:	Connection (id #7059257) lost for the server (#1) on database (Shop)
+2025-11-11 14:21:43,090: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7059257(Query-id: 5076685):
+Error Message:ERROR:  syntax error at or near ";"
+LINE 8: insert into customers (name, surname, email);
+                                                    ^ 
+
+SQL state: 42601
+Character: 191
+2025-11-11 14:21:57,102: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7059257(Query-id: 4679722):
+Error Message:ERROR:  syntax error at or near "insert"
+LINE 8: insert into customers (name, surname, email)
+        ^ 
+
+SQL state: 42601
+Character: 146
+2025-11-11 14:22:15,321: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7059257(Query-id: 7738077):
+Error Message:ERROR:  syntax error at or near "value"
+LINE 2: value
+        ^ 
+
+SQL state: 42601
+Character: 46
+2025-11-11 14:22:23,154: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7059257(Query-id: 2625565):
+Error Message:ERROR:  syntax error at or near "value"
+LINE 2: value,
+        ^ 
+
+SQL state: 42601
+Character: 46
+2025-11-11 14:26:21,507: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7059257(Query-id: 9186504):
+Error Message:ERROR:  duplicate key value violates unique constraint "customers_email_key"
+Key (email)=(cnkuna@gmail.com) already exists. 
+
+SQL state: 23505
+Detail: Key (email)=(cnkuna@gmail.com) already exists.
+2025-11-11 14:35:38,338: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7059257(Query-id: 4699163):
+Error Message:ERROR:  column "id" does not exist
+LINE 3: WHERE id = 1;
+              ^ 
+
+SQL state: 42703
+Character: 54
+2025-11-11 14:35:51,667: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7059257(Query-id: 2146787):
+Error Message:ERROR:  syntax error at or near ","
+LINE 3: WHERE id = 1,
+                    ^ 
+
+SQL state: 42601
+Character: 60
+2025-11-11 14:36:04,734: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7059257(Query-id: 8787146):
+Error Message:ERROR:  syntax error at or near "select"
+LINE 6: select * from customers
+        ^ 
+
+SQL state: 42601
+Character: 54
+2025-11-11 14:36:30,754: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7059257(Query-id: 3602685):
+Error Message:ERROR:  syntax error at or near ","
+LINE 3: WHERE id = 1,
+                    ^ 
+
+SQL state: 42601
+Character: 60
+2025-11-11 14:36:32,103: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7059257(Query-id: 3042561):
+Error Message:ERROR:  syntax error at or near ","
+LINE 3: WHERE id = 1,
+                    ^ 
+
+SQL state: 42601
+Character: 60
+2025-11-11 14:36:59,098: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7059257(Query-id: 3653595):
+Error Message:ERROR:  column "id" does not exist
+LINE 3: WHERE id = 1;
+              ^ 
+
+SQL state: 42703
+Character: 54
+2025-11-11 15:57:16,177: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:4471571(Query-id: 9048104):
+Error Message:ERROR:  syntax error at or near "surname"
+LINE 4: surname VARCHAR NOT NULL
+        ^ 
+
+SQL state: 42601
+Character: 70
+2025-11-11 15:57:26,092: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:4471571(Query-id: 8236583):
+Error Message:ERROR:  syntax error at or near ")"
+LINE 7: );
+        ^ 
+
+SQL state: 42601
+Character: 128
+2025-11-11 15:57:44,724: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:4471571(Query-id: 739062):
+Error Message:ERROR:  syntax error at or near ")"
+LINE 7: )
+        ^ 
+
+SQL state: 42601
+Character: 128
+2025-11-11 15:58:03,524: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:4471571(Query-id: 1209852):
+Error Message:ERROR:  syntax error at or near ")"
+LINE 7: );
+        ^ 
+
+SQL state: 42601
+Character: 128
+2025-11-11 15:58:55,240: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:4471571(Query-id: 5079830):
+Error Message:ERROR:  syntax error at or near "("
+LINE 5: age INT(2),
+               ^ 
+
+SQL state: 42601
+Character: 114
+2025-11-11 16:03:04,557: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:4471571(Query-id: 7349949):
+Error Message:ERROR:  invalid input syntax for type integer: "Charlotte"
+LINE 3: ('Charlotte', 'Nkuna','29','cnkuna@gmail.com'),
+         ^ 
+
+SQL state: 22P02
+Character: 30
+2025-11-11 16:04:14,654: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:4471571(Query-id: 7849874):
+Error Message:ERROR:  syntax error at or near "practice"
+LINE 1: select * practice;
+                 ^ 
+
+SQL state: 42601
+Character: 10
+2025-11-11 16:11:33,578: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:4471571(Query-id: 1641404):
+Error Message:ERROR:  invalid input syntax for type boolean: "hlorie@gmail.com"
+LINE 2: where 'hlorie@gmail.com';
+              ^ 
+
+SQL state: 22P02
+Character: 28
+2025-11-11 16:11:44,311: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:4471571(Query-id: 9545990):
+Error Message:ERROR:  syntax error at or near "="
+LINE 2: where = 'hlorie@gmail.com';
+              ^ 
+
+SQL state: 42601
+Character: 28
+2025-11-11 16:11:58,911: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:4471571(Query-id: 9851317):
+Error Message:ERROR:  syntax error at or near "="
+LINE 2: where = ('hlorie@gmail.com');
+              ^ 
+
+SQL state: 42601
+Character: 28
+2025-11-11 16:18:14,244: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:4471571(Query-id: 9586468):
+Error Message:ERROR:  relation "practice" does not exist
+LINE 1: select * from practice;
+                      ^ 
+
+SQL state: 42P01
+Character: 15
+2025-11-12 10:23:10,137: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2025-11-12 10:23:58,419: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2025-11-12 10:25:03,028: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2025-11-12 12:26:27,075: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7455293(Query-id: 6607473):
+Error Message:ERROR:  syntax error at or near "UNIQUE"
+LINE 5: email UNIQUE (100);
+              ^ 
+
+SQL state: 42601
+Character: 128
+2025-11-12 12:26:54,893: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7455293(Query-id: 4611068):
+Error Message:ERROR:  syntax error at or near "("
+LINE 5: email VARCHAR UNIQUE (100),
+                             ^ 
+
+SQL state: 42601
+Character: 143
+2025-11-12 14:46:13,118: WARNING	pgadmin:	Connection to database server (#1) for the connection - 'CONN:7455293' has been lost.
+2025-11-12 14:46:13,120: ERROR	pgadmin:	Connection (id #7455293) lost for the server (#1) on database (School)
+2025-11-12 15:24:27,266: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:2255418(Query-id: 4562328):
+Error Message:ERROR:  syntax error at or near "REFERENCE"
+LINE 4: learner_id INT REFERENCE learners(learner_id),
+                       ^ 
+
+SQL state: 42601
+Character: 75
+2025-11-12 15:26:12,000: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:2255418(Query-id: 2899637):
+Error Message:ERROR:  column "course_id" referenced in foreign key constraint does not exist 
+
+SQL state: 42703
+2025-11-12 15:53:00,103: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:2255418(Query-id: 2164353):
+Error Message:ERROR:  syntax error at or near "'Charlotte'"
+LINE 1: ('Charlotte','Nkuna', 'cnkuna@gmail', 0633507617),
+         ^ 
+
+SQL state: 42601
+Character: 2
+2025-11-12 15:59:08,841: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:2255418(Query-id: 9821532):
+Error Message:ERROR:  INSERT has more expressions than target columns
+LINE 3: ...tro to SQL', '6 Weeks', 'cnkuna@gmail', 2025-10-10, 'Adam'),
+                                                               ^ 
+
+SQL state: 42601
+Character: 131

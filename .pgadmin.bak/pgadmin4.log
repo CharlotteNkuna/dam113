@@ -1,0 +1,7 @@
+2025-11-10 13:07:36,655: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2025-11-10 13:07:38,576: WARNING	pgadmin:	There are no saved passwords
+2025-11-10 13:08:01,180: ERROR	pgadmin:	Could not connect to server(#1) - 'PostgreSQL 16'.
+Error: connection failed: connection to server at "::1", port 5432 failed: FATAL:  password authentication failed for user "postgres"
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "postgres"
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: FATAL:  password authentication failed for user "postgres"

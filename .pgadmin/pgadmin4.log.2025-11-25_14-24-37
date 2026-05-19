@@ -1,0 +1,2 @@
+2025-11-25 14:24:37,915: ERROR	pgadmin:	Failed to execute query (execute_scalar) for the server #1 - DB:postgres (Query-id: 2235034):
+Error Message:database "Habit_Tracker" already exists

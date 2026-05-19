@@ -1,0 +1,104 @@
+0 verbose cli /opt/homebrew/Cellar/node@22/22.15.0/bin/node /opt/homebrew/opt/node@22/bin/npm
+1 info using npm@10.9.2
+2 info using node@v22.15.0
+3 silly config load:file:/opt/homebrew/Cellar/node@22/22.15.0/lib/node_modules/npm/npmrc
+4 silly config load:file:/Users/dam113/Library/Caches/typescript/5.8/.npmrc
+5 silly config load:file:/Users/dam113/.npmrc
+6 silly config load:file:/opt/homebrew/etc/npmrc
+7 verbose title npm install types-registry@latest
+8 verbose argv "install" "--ignore-scripts" "types-registry@latest"
+9 verbose logfile logs-max:10 dir:/Users/dam113/.npm/_logs/2026-05-14T10_18_07_954Z-
+10 verbose logfile /Users/dam113/.npm/_logs/2026-05-14T10_18_07_954Z-debug-0.log
+11 silly logfile start cleaning logs, removing 1 files
+12 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+13 silly logfile done cleaning log files
+14 silly packumentCache corgi:https://registry.npmjs.org/types-registry cache-miss
+15 http fetch GET 200 https://registry.npmjs.org/types-registry 128ms (cache revalidated)
+16 silly packumentCache corgi:https://registry.npmjs.org/types-registry set size:624232 disposed:false
+17 silly idealTree buildDeps
+18 silly fetch manifest types-registry@0.1.769
+19 silly packumentCache full:https://registry.npmjs.org/types-registry cache-miss
+20 http fetch GET 200 https://registry.npmjs.org/types-registry 25ms (cache revalidated)
+21 silly packumentCache full:https://registry.npmjs.org/types-registry set size:1350875 disposed:false
+22 silly placeDep ROOT types-registry@0.1.769 REPLACE for:  want: 0.1.769
+23 silly reify moves {}
+24 silly audit bulk request {
+24 silly audit   '@popperjs/core': [ '2.11.8' ],
+24 silly audit   '@types/bcrypt': [ '6.0.0' ],
+24 silly audit   '@types/body-parser': [ '1.19.6' ],
+24 silly audit   '@types/bootstrap': [ '5.2.10' ],
+24 silly audit   '@types/co': [ '4.6.6' ],
+24 silly audit   '@types/connect': [ '3.4.38' ],
+24 silly audit   '@types/cookiejar': [ '2.1.5' ],
+24 silly audit   '@types/cors': [ '2.8.19' ],
+24 silly audit   '@types/d': [ '1.0.4' ],
+24 silly audit   '@types/debug': [ '4.1.12' ],
+24 silly audit   '@types/depd': [ '1.1.37' ],
+24 silly audit   '@types/dot': [ '1.1.7' ],
+24 silly audit   '@types/express': [ '5.0.6' ],
+24 silly audit   '@types/express-serve-static-core': [ '5.1.0' ],
+24 silly audit   '@types/finalhandler': [ '1.2.4' ],
+24 silly audit   '@types/http-errors': [ '2.0.5' ],
+24 silly audit   '@types/jsonwebtoken': [ '9.0.10' ],
+24 silly audit   '@types/less': [ '3.0.8' ],
+24 silly audit   '@types/methods': [ '1.1.4' ],
+24 silly audit   '@types/mocha': [ '10.0.10' ],
+24 silly audit   '@types/morgan': [ '1.9.10' ],
+24 silly audit   '@types/ms': [ '2.1.0' ],
+24 silly audit   '@types/multer': [ '2.1.0' ],
+24 silly audit   '@types/node': [ '24.1.0' ],
+24 silly audit   '@types/parseurl': [ '1.3.3' ],
+24 silly audit   '@types/pg': [ '8.15.6' ],
+24 silly audit   '@types/prompt': [ '1.1.9' ],
+24 silly audit   '@types/prompt-sync': [ '4.2.3' ],
+24 silly audit   '@types/qs': [ '6.14.0' ],
+24 silly audit   '@types/range-parser': [ '1.2.7' ],
+24 silly audit   '@types/react': [ '19.2.14' ],
+24 silly audit   '@types/react-dom': [ '19.2.3' ],
+24 silly audit   '@types/revalidator': [ '0.3.12' ],
+24 silly audit   '@types/send': [ '1.2.1' ],
+24 silly audit   '@types/serve-static': [ '2.2.0' ],
+24 silly audit   '@types/set-cookie-parser': [ '2.4.10' ],
+24 silly audit   '@types/stylus': [ '0.48.43' ],
+24 silly audit   '@types/superagent': [ '8.1.9' ],
+24 silly audit   '@types/supertest': [ '6.0.3' ],
+24 silly audit   asynckit: [ '0.4.0' ],
+24 silly audit   'call-bind-apply-helpers': [ '1.0.2' ],
+24 silly audit   'combined-stream': [ '1.0.8' ],
+24 silly audit   csstype: [ '3.2.3' ],
+24 silly audit   'delayed-stream': [ '1.0.0' ],
+24 silly audit   'dunder-proto': [ '1.0.1' ],
+24 silly audit   'es-define-property': [ '1.0.1' ],
+24 silly audit   'es-errors': [ '1.3.0' ],
+24 silly audit   'es-object-atoms': [ '1.1.1' ],
+24 silly audit   'es-set-tostringtag': [ '2.1.0' ],
+24 silly audit   'form-data': [ '4.0.5' ],
+24 silly audit   'function-bind': [ '1.1.2' ],
+24 silly audit   'get-intrinsic': [ '1.3.0' ],
+24 silly audit   'get-proto': [ '1.0.1' ],
+24 silly audit   gopd: [ '1.2.0' ],
+24 silly audit   'has-symbols': [ '1.1.0' ],
+24 silly audit   'has-tostringtag': [ '1.0.2' ],
+24 silly audit   hasown: [ '2.0.2' ],
+24 silly audit   'math-intrinsics': [ '1.1.0' ],
+24 silly audit   'mime-db': [ '1.52.0' ],
+24 silly audit   'mime-types': [ '2.1.35' ],
+24 silly audit   'pg-int8': [ '1.0.1' ],
+24 silly audit   'pg-protocol': [ '1.10.3' ],
+24 silly audit   'pg-types': [ '2.2.0' ],
+24 silly audit   'postgres-array': [ '2.0.0' ],
+24 silly audit   'postgres-bytea': [ '1.0.0' ],
+24 silly audit   'postgres-date': [ '1.0.7' ],
+24 silly audit   'postgres-interval': [ '1.2.0' ],
+24 silly audit   'undici-types': [ '7.8.0' ],
+24 silly audit   xtend: [ '4.0.2' ],
+24 silly audit   'types-registry': [ '0.1.769' ]
+24 silly audit }
+25 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 320ms
+26 silly audit report {}
+27 verbose cwd /Users/dam113/Library/Caches/typescript/5.8
+28 verbose os Darwin 25.3.0
+29 verbose node v22.15.0
+30 verbose npm  v10.9.2
+31 verbose exit 0
+32 info ok

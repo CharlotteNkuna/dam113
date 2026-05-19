@@ -1,0 +1,131 @@
+2025-11-10 13:17:06,387: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2025-11-10 13:17:12,870: ERROR	pgadmin:	Could not connect to server(#1) - 'PostgreSQL 16'.
+Error: connection failed: connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "postgres"
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: FATAL:  password authentication failed for user "postgres"
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "postgres"
+2025-11-10 13:18:28,096: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2025-11-10 13:18:34,785: ERROR	pgadmin:	Could not connect to server(#1) - 'PostgreSQL 16'.
+Error: connection failed: connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "postgres"
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: FATAL:  password authentication failed for user "postgres"
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "postgres"
+2025-11-10 13:18:56,398: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2025-11-10 13:19:04,131: ERROR	pgadmin:	Could not connect to server(#1) - 'PostgreSQL 16'.
+Error: connection failed: connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "postgres"
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: FATAL:  password authentication failed for user "postgres"
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: FATAL:  password authentication failed for user "postgres"
+2025-11-10 13:33:40,036: ERROR	pgadmin:	Could not connect to server(#1) - 'PostgreSQL 16'.
+Error: connection failed: connection to server at "127.0.0.1", port 5432 failed: FATAL:  role "postgres" does not exist
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: FATAL:  role "postgres" does not exist
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: FATAL:  role "postgres" does not exist
+2025-11-10 13:33:41,394: ERROR	pgadmin:	Could not connect to server(#1) - 'PostgreSQL 16'.
+Error: connection failed: connection to server at "127.0.0.1", port 5432 failed: FATAL:  role "postgres" does not exist
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: FATAL:  role "postgres" does not exist
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: FATAL:  role "postgres" does not exist
+2025-11-10 13:33:42,110: ERROR	pgadmin:	Could not connect to server(#1) - 'PostgreSQL 16'.
+Error: connection failed: connection to server at "127.0.0.1", port 5432 failed: FATAL:  role "postgres" does not exist
+Multiple connection attempts failed. All failures were:
+- host: 'localhost', port: '5432', hostaddr: '::1': connection failed: connection to server at "::1", port 5432 failed: FATAL:  role "postgres" does not exist
+- host: 'localhost', port: '5432', hostaddr: '127.0.0.1': connection failed: connection to server at "127.0.0.1", port 5432 failed: FATAL:  role "postgres" does not exist
+2025-11-10 13:47:43,336: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2025-11-10 14:01:51,832: WARNING	werkzeug:	Werkzeug appears to be used in a production deployment. Consider switching to a production web server instead.
+2025-11-11 11:43:19,723: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:2123987(Query-id: 7806652):
+Error Message:ERROR:  relation "customers" does not exist
+LINE 1: SELECT * FROM Customers
+                      ^ 
+
+SQL state: 42P01
+Character: 15
+2025-11-11 11:47:52,598: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:4350105(Query-id: 1811450):
+Error Message:ERROR:  table "customer" does not exist 
+
+SQL state: 42P01
+2025-11-11 11:48:47,129: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:4350105(Query-id: 4441173):
+Error Message:ERROR:  table "customer" does not exist 
+
+SQL state: 42P01
+2025-11-11 11:48:58,537: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:4350105(Query-id: 8600255):
+Error Message:ERROR:  table "customers" does not exist 
+
+SQL state: 42P01
+2025-11-11 11:49:57,829: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:4350105(Query-id: 7054518):
+Error Message:ERROR:  table "customers" does not exist 
+
+SQL state: 42P01
+2025-11-11 11:50:29,862: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:4350105(Query-id: 1489908):
+Error Message:ERROR:  table "customers" does not exist 
+
+SQL state: 42P01
+2025-11-11 11:50:32,732: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:4350105(Query-id: 1132661):
+Error Message:ERROR:  table "customers" does not exist 
+
+SQL state: 42P01
+2025-11-11 11:50:53,627: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:4350105(Query-id: 277399):
+Error Message:ERROR:  table "customers" does not exist 
+
+SQL state: 42P01
+2025-11-11 11:50:59,074: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:4350105(Query-id: 2461967):
+Error Message:ERROR:  table "customers" does not exist 
+
+SQL state: 42P01
+2025-11-11 11:51:25,183: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:4350105(Query-id: 804349):
+Error Message:ERROR:  relation "customers" does not exist
+LINE 1: select * from Customers
+                      ^ 
+
+SQL state: 42P01
+Character: 15
+2025-11-11 11:51:27,923: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:4350105(Query-id: 2423827):
+Error Message:ERROR:  relation "customers" does not exist
+LINE 1: select * from Customers;
+                      ^ 
+
+SQL state: 42P01
+Character: 15
+2025-11-11 11:53:39,803: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:4350105(Query-id: 167060):
+Error Message:ERROR:  table "customers" does not exist 
+
+SQL state: 42P01
+2025-11-11 11:55:00,586: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:4350105(Query-id: 9482336):
+Error Message:ERROR:  table "hy" does not exist 
+
+SQL state: 42P01
+2025-11-11 12:02:33,897: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:4350105(Query-id: 3274260):
+Error Message:ERROR:  syntax error at end of input
+LINE 3: name TEXT
+                 ^ 
+
+SQL state: 42601
+Character: 39
+2025-11-11 12:03:57,389: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:4350105(Query-id: 6112906):
+Error Message:ERROR:  relation "school" does not exist
+LINE 1: select * from school;
+                      ^ 
+
+SQL state: 42P01
+Character: 15
+2025-11-11 12:23:29,631: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7059257(Query-id: 2477692):
+Error Message:ERROR:  syntax error at or near ")"
+LINE 7: );
+        ^ 
+
+SQL state: 42601
+Character: 155
+2025-11-11 12:23:43,394: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7059257(Query-id: 4938870):
+Error Message:ERROR:  syntax error at or near ")"
+LINE 6: );
+        ^ 
+
+SQL state: 42601
+Character: 144
+2025-11-11 12:23:44,561: ERROR	pgadmin:	Failed to execute query (execute_async) for the server #1 - CONN:7059257(Query-id: 9620593):
+Error Message:ERROR:  syntax error at or near ")"
+LINE 6: );
+        ^ 
+
+SQL state: 42601
+Character: 144

@@ -1,0 +1,344 @@
+{
+	"name": "env-variable-viewer",
+	"displayName": "Environment Variable Viewer - .env & dotenv File Manager",
+	"description": ".env file viewer & dotenv manager for VS Code. View, search, copy, export & validate environment variables. Supports .env.local, .env.production, .env.development & custom files. Tree view, quick pick, masking & validation. React, Next.js, Vue, Angular, Svelte, Node.js, NestJS, Python, Docker & Kubernetes.",
+	"version": "1.1.5",
+	"publisher": "GingerTurtle",
+	"icon": "images/icon.png",
+	"galleryBanner": {
+		"color": "#1e1e1e",
+		"theme": "dark"
+	},
+	"author": {
+		"name": "Renni",
+		"email": "renni@example.com"
+	},
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Goldenvikingsunset/Specific-.env-File-Variable-ViewerCopier"
+	},
+	"bugs": {
+		"url": "https://github.com/Goldenvikingsunset/Specific-.env-File-Variable-ViewerCopier/issues"
+	},
+	"homepage": "https://github.com/Goldenvikingsunset/Specific-.env-File-Variable-ViewerCopier#readme",
+	"sponsor": {
+		"url": "https://buymeacoffee.com/gingerturtle"
+	},
+	"engines": {
+		"vscode": "^1.74.0"
+	},
+	"categories": [
+		"Other",
+		"Programming Languages",
+		"Linters"
+	],
+	"keywords": [
+		"env",
+		"dotenv",
+		".env",
+		".env file",
+		"environment variables",
+		"env file",
+		"env viewer",
+		"dotenv viewer",
+		"env file viewer",
+		"env file browser",
+		"env browser",
+		"environment file viewer",
+		"env manager",
+		"env editor",
+		".env editor",
+		"dotenv editor",
+		"dotenv manager",
+		"dotenv extension",
+		"dotenv plugin",
+		"dotenv support",
+		"dotenv tool",
+		"env inspector",
+		"env reader",
+		"configuration",
+		"environment variable manager",
+		"environment variable viewer",
+		"env file reader",
+		"env file manager",
+		"dotenv config",
+		"secrets",
+		"secret manager",
+		"api keys",
+		"api key viewer",
+		"api key manager",
+		"env.local",
+		"env.production",
+		"env.development",
+		"env.test",
+		"env.example",
+		"react env",
+		"node env",
+		"nextjs env",
+		"vite env",
+		"vue env",
+		"docker env",
+		"nestjs env",
+		"nuxt env",
+		"environment file",
+		"env variables",
+		"dotenv file",
+		"dotenv variables",
+		"process.env",
+		"export env",
+		"copy env",
+		"validate env",
+		"env validation",
+		"env export",
+		"env loader",
+		"env parser",
+		"devops",
+		"nodejs",
+		"react",
+		"nextjs",
+		"vue",
+		"angular",
+		"svelte",
+		"sveltekit",
+		"vite",
+		"nestjs",
+		"nuxt",
+		"nuxtjs",
+		"express",
+		"fastify",
+		"remix",
+		"astro",
+		"docker",
+		"kubernetes",
+		"twelve-factor",
+		"12-factor"
+	],
+	"activationEvents": [
+		"workspaceContains:**/.env*"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "envViewer.sponsor",
+				"title": "☕ Support This Extension",
+				"category": "Env Viewer",
+				"icon": "$(heart)"
+			},
+			{
+				"command": "envViewer.viewVariables",
+				"title": "View Environment Variables",
+				"category": "Env Viewer",
+				"icon": "$(list-flat)"
+			},
+			{
+				"command": "envViewer.copyVariable",
+				"title": "Copy Environment Variable",
+				"category": "Env Viewer",
+				"icon": "$(clippy)"
+			},
+			{
+				"command": "envViewer.refreshTree",
+				"title": "Refresh",
+				"icon": "$(refresh)"
+			},
+			{
+				"command": "envViewer.openFile",
+				"title": "Open File",
+				"icon": "$(go-to-file)"
+			},
+			{
+				"command": "envViewer.copyKey",
+				"title": "Copy Key",
+				"icon": "$(key)"
+			},
+			{
+				"command": "envViewer.copyValue",
+				"title": "Copy Value",
+				"icon": "$(clippy)"
+			},
+			{
+				"command": "envViewer.copyBoth",
+				"title": "Copy Key=Value",
+				"icon": "$(symbol-parameter)"
+			},
+			{
+				"command": "envViewer.searchVariables",
+				"title": "Search Variables",
+				"icon": "$(search)"
+			},
+			{
+				"command": "envViewer.toggleQuickPick",
+				"title": "Toggle Quick Pick View",
+				"icon": "$(list-selection)"
+			},
+			{
+				"command": "envViewer.exportVariables",
+				"title": "Export Variables",
+				"category": "Env Viewer",
+				"icon": "$(export)"
+			},
+			{
+				"command": "envViewer.showValidationWarnings",
+				"title": "Show Validation Warnings",
+				"category": "Env Viewer",
+				"icon": "$(warning)"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "envViewer.viewVariables",
+				"key": "ctrl+alt+e",
+				"mac": "cmd+alt+e",
+				"when": "!inputFocus"
+			},
+			{
+				"command": "envViewer.searchVariables",
+				"key": "ctrl+alt+f",
+				"mac": "cmd+alt+f",
+				"when": "envViewer.treeViewVisible"
+			}
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"when": "resourceFilename =~ /^\\.env/",
+					"command": "envViewer.viewVariables",
+					"group": "navigation"
+				}
+			],
+			"view/title": [
+				{
+					"command": "envViewer.sponsor",
+					"when": "view == envVariablesExplorer",
+					"group": "navigation@5"
+				},
+				{
+					"command": "envViewer.refreshTree",
+					"when": "view == envVariablesExplorer",
+					"group": "navigation@1"
+				},
+				{
+					"command": "envViewer.searchVariables",
+					"when": "view == envVariablesExplorer",
+					"group": "navigation@2"
+				},
+				{
+					"command": "envViewer.toggleQuickPick",
+					"when": "view == envVariablesExplorer",
+					"group": "navigation@3"
+				},
+				{
+					"command": "envViewer.exportVariables",
+					"when": "view == envVariablesExplorer",
+					"group": "navigation@4"
+				}
+			],
+			"view/item/context": [
+				{
+					"command": "envViewer.copyKey",
+					"when": "view == envVariablesExplorer && viewItem == envVariable",
+					"group": "copy@1"
+				},
+				{
+					"command": "envViewer.copyValue",
+					"when": "view == envVariablesExplorer && viewItem == envVariable",
+					"group": "copy@2"
+				},
+				{
+					"command": "envViewer.copyBoth",
+					"when": "view == envVariablesExplorer && viewItem == envVariable",
+					"group": "copy@3"
+				},
+				{
+					"command": "envViewer.openFile",
+					"when": "view == envVariablesExplorer && viewItem == envFile",
+					"group": "navigation@1"
+				}
+			]
+		},
+		"views": {
+			"explorer": [
+				{
+					"icon": "icon.png",
+					"id": "envVariablesExplorer",
+					"name": "Environment Variables",
+					"when": "envViewer.hasEnvFiles"
+				}
+			]
+		},
+		"viewsWelcome": [
+			{
+				"view": "envVariablesExplorer",
+				"contents": "No environment files found in workspace.\n[Create .env file](command:workbench.action.files.newUntitledFile)\nMake sure your workspace contains .env files to view environment variables."
+			}
+		],
+		"configuration": {
+			"title": "Environment Variable Viewer",
+			"properties": {
+				"envViewer.envFilePatterns": {
+					"type": "array",
+					"default": [
+						".env",
+						".env.local",
+						".env.development",
+						".env.production",
+						".env.staging",
+						".env.test",
+						".env.example"
+					],
+					"description": "File patterns to search for environment files",
+					"items": {
+						"type": "string"
+					}
+				},
+				"envViewer.showLineNumbers": {
+					"type": "boolean",
+					"default": true,
+					"description": "Show line numbers in the tree view and quick pick"
+				},
+				"envViewer.maskSensitiveValues": {
+					"type": "boolean",
+					"default": true,
+					"description": "Mask values containing 'password', 'secret', 'key', or 'token'"
+				},
+				"envViewer.autoRefresh": {
+					"type": "boolean",
+					"default": true,
+					"description": "Automatically refresh when .env files change"
+				},
+				"envViewer.sortVariables": {
+					"type": "string",
+					"enum": [
+						"none",
+						"alphabetical",
+						"byFile"
+					],
+					"default": "alphabetical",
+					"description": "How to sort environment variables"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile",
+		"lint": "echo Linting skipped - not required for functionality",
+		"test": "node ./out/test/runTest.js",
+		"package": "vsce package",
+		"publish": "vsce publish"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.74.0",
+		"@types/node": "^20.0.0",
+		"typescript": "^5.3.0",
+		"@vscode/vsce": "^2.22.0"
+	},
+	"__metadata": {
+		"installedTimestamp": 1776254090170,
+		"size": 104085
+	}
+}
