@@ -1,0 +1,25 @@
+ë:root {
+  --bg: #000;
+  --panel: #0f0f0f;
+  --panel-2: #181818;
+  --muted: #b3b3b3;
+  --text: #e5e5e5;
+  --brand: #e50914;
+  --border: #222;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  background: radial-gradient(50% 120% at 50% 50%, #141414 0%, #000 100%);
+  color: var(--text);
+}
+
+a { color: var(--text); }
+
+* { box-sizing: border-box; }
+ë*cascade08"(fc989d7b234a986df510f20761272e8831be88ba2@file:///Users/dam113/Desktop/React-MiniFlix-movies/src/index.css:2file:///Users/dam113/Desktop/React-MiniFlix-movies

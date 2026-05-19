@@ -1,0 +1,98 @@
+{
+    "1764073636318/Habit_Tracker#Habit_Tracker#foreignKey": [],
+    "1764073636318/postgres#postgres#foreignKey": [],
+    "1764073636318/recipe_db#recipe_db#foreignKey": [],
+    "1764073636318/recipes#recipes#foreignKey": [],
+    "1764073636318/recipes_db#recipes_db#foreignKey": [],
+    "1764073636318/School#School#foreignKey": [
+        {
+            "constraint_name": "enrolments_learner_id_fkey",
+            "table_schema": "public",
+            "table_name": "enrolments",
+            "column_name": "learner_id",
+            "referenced_table": "learners",
+            "referenced_column": "learner_id",
+            "updateRule": "a",
+            "deleteRule": "a"
+        },
+        {
+            "constraint_name": "enrolments_course_id_fkey",
+            "table_schema": "public",
+            "table_name": "enrolments",
+            "column_name": "course_id",
+            "referenced_table": "courses",
+            "referenced_column": "course_id",
+            "updateRule": "a",
+            "deleteRule": "a"
+        }
+    ],
+    "1764073636318/Shop#Shop#foreignKey": [],
+    "1764073636318/users#users#foreignKey": [],
+    "1764073636318/ems#ems#foreignKey": [],
+    "1764073636318/ems_db#ems_db#foreignKey": [],
+    "1764073636318/employee_management#employee_management#foreignKey": [],
+    "1764073636318/employee_managements#employee_managements#foreignKey": [
+        {
+            "constraint_name": "Employee_departmentId_fkey",
+            "table_schema": "public",
+            "table_name": "Employee",
+            "column_name": "departmentId",
+            "referenced_table": "Department",
+            "referenced_column": "id",
+            "updateRule": "c",
+            "deleteRule": "r"
+        }
+    ],
+    "1764073636318/BidZone#BidZone#foreignKey": [
+        {
+            "constraint_name": "AuctionItem_auctionerId_fkey",
+            "table_schema": "public",
+            "table_name": "AuctionItem",
+            "column_name": "auctionerId",
+            "referenced_table": "Auctioner",
+            "referenced_column": "id",
+            "updateRule": "c",
+            "deleteRule": "r"
+        },
+        {
+            "constraint_name": "Bid_auctionId_fkey",
+            "table_schema": "public",
+            "table_name": "Bid",
+            "column_name": "auctionId",
+            "referenced_table": "AuctionItem",
+            "referenced_column": "id",
+            "updateRule": "c",
+            "deleteRule": "r"
+        },
+        {
+            "constraint_name": "Wallet_bidderId_fkey",
+            "table_schema": "public",
+            "table_name": "Wallet",
+            "column_name": "bidderId",
+            "referenced_table": "Bidder",
+            "referenced_column": "id",
+            "updateRule": "c",
+            "deleteRule": "r"
+        },
+        {
+            "constraint_name": "Bid_bidderId_fkey",
+            "table_schema": "public",
+            "table_name": "Bid",
+            "column_name": "bidderId",
+            "referenced_table": "Bidder",
+            "referenced_column": "id",
+            "updateRule": "c",
+            "deleteRule": "r"
+        },
+        {
+            "constraint_name": "Transaction_walletId_fkey",
+            "table_schema": "public",
+            "table_name": "Transaction",
+            "column_name": "walletId",
+            "referenced_table": "Wallet",
+            "referenced_column": "id",
+            "updateRule": "c",
+            "deleteRule": "r"
+        }
+    ]
+}

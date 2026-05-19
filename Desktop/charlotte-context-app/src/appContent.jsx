@@ -2,7 +2,7 @@ import { useContext } from "react";
 import { ThemeContext } from "./Context/ThemeContext";
 import Buttons from "./Components/Buttons";
 
-function AppContent() {
+function appContent() {
   const { themeColour } = useContext(ThemeContext);
 
   console.log("AppContent theme:", themeColour); // 👈 DEBUG
@@ -15,4 +15,4 @@ function AppContent() {
   );
 }
 
-export default AppContent;
+export default appContent;

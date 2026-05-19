@@ -1,0 +1,354 @@
+†3#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+/* --- Blueish Theme Overrides and Components --- */
+:root {
+  --bg: #0b1220;
+  --surface: #0f1b2d;
+  --surface-2: #12243d;
+  --primary: #3b82f6;
+  --primary-700: #2563eb;
+  --ring: #60a5fa;
+  --text: #e6f0ff;
+  --muted: #94a3b8;
+  --card: #0f172a;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+.app {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 1.25rem;
+}
+.header-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 100%;
+}
+.header-top h1 { margin: 0 0 0 10px; }
+@media (max-width: 700px) {
+  .header-top { flex-direction: column; }
+}
+.header h1 {
+  margin: 0;
+  font-size: 2.25rem;
+  color: var(--text);
+}
+.header .subtitle {
+  margin: 1.5rem 0 0;
+  color: var(--muted);
+}
+
+.nav ul {
+  margin: 0.6rem 0 0;
+  padding: 0;
+  display: flex;
+  gap: 0.9rem;
+  justify-content: center;
+  list-style: none;
+}
+.nav a {
+  color: var(--ring);
+  padding: 0.35rem 0.6rem;
+  border-radius: 8px;
+  border: 1px solid transparent;
+}
+.nav a:hover {
+  border-color: rgba(59, 130, 246, 0.35);
+  background: rgba(59, 130, 246, 0.15);
+}
+
+/* Mobile burger menu */
+.menu-toggle {
+  display: none;
+  width: 38px;
+  height: 34px;
+  padding: 6px 7px;
+  border-radius: 8px;
+  border: 1px solid rgba(59,130,246,0.25);
+  background: var(--surface);
+  margin-right: 10px;
+  box-sizing: border-box;
+  color: #ffffff;
+}
+.menu-toggle span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--text);
+  margin: 4px 0;
+  border-radius: 1px;
+}
+
+@media (max-width: 700px) {
+  .menu-toggle { display: flex; align-items: center; justify-content: center; }
+  .nav { display: none; }
+  .nav.open { display: block; }
+  .nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4rem;
+    margin: 0.5rem 0 0.5rem 10px;
+  }
+}
+
+.main {
+  background: linear-gradient(180deg, var(--surface), rgba(16, 24, 40, 0));
+  border: 1px solid rgba(59, 130, 246, 0.15);
+  border-radius: 16px;
+  padding: 1rem;
+  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.45);
+}
+
+.searchbar {
+  display: flex;
+  gap: 0.5rem;
+  background: var(--surface);
+  border: 1px solid rgba(59, 130, 246, 0.15);
+  padding: 0.75rem;
+  border-radius: 12px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  backdrop-filter: blur(6px);
+}
+.searchbar input {
+  flex: 1;
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid rgba(59, 130, 246, 0.2);
+  border-radius: 10px;
+  padding: 0.65rem 0.8rem;
+}
+.searchbar input:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.25);
+  border-color: var(--ring);
+}
+.searchbar button {
+  background: var(--primary);
+  color: white;
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  border-radius: 10px;
+  padding: 0.65rem 1rem;
+}
+.searchbar button:hover {
+  background: var(--primary-700);
+}
+
+.status {
+  color: var(--muted);
+  padding: 1rem;
+  text-align: center;
+}
+.status.error {
+  color: #fca5a5;
+}
+
+.grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1rem;
+}
+
+.drink-card {
+  background: var(--surface);
+  border: 1px solid rgba(59, 130, 246, 0.15);
+  border-radius: 14px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.drink-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  background: #0a0f1c;
+}
+.drink-info {
+  padding: 0.75rem 0.9rem 1rem;
+}
+.drink-info h3 {
+  margin: 0 0 0.35rem;
+  font-size: 1.1rem;
+  color: var(--text);
+}
+.drink-info .meta {
+  margin: 0 0 0.5rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.drink-info .instructions {
+  margin: 0;
+  color: #c8d5ff;
+  font-size: 0.95rem;
+}
+
+.footer {
+  margin-top: 6rem;
+  text-align: center;
+  color: var(--muted);
+}
+.footer a { color: var(--ring); }
+
+/* Filter bar */
+.filterbar {
+  display: flex;
+  gap: 0.5rem;
+  margin: 0.75rem 0 0.25rem;
+}
+.chip {
+  padding: 0.4rem 0.7rem;
+  border-radius: 999px;
+  background: var(--surface);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  color: var(--text);
+}
+.chip.active { background: rgba(59, 130, 246, 0.25); }
+
+/* Buttons */
+.btn {
+  padding: 0.5rem 0.75rem;
+  border-radius: 10px;
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  background: var(--surface-2);
+  color: var(--text);
+}
+.btn-primary { background: var(--primary); color: #fff; }
+.btn-secondary { background: #0ea5e9; color: #00111f; }
+.btn-outline { background: transparent; }
+.row { display: flex; gap: 0.5rem; }
+
+/* Modal */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(2, 6, 23, 0.65);
+  z-index: 50;
+}
+.modal-content {
+  width: min(800px, 92vw);
+  background: var(--surface);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  border-radius: 14px;
+  box-shadow: 0 10px 40px rgba(2, 6, 23, 0.6);
+}
+.modal-body {
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+.modal-body img { width: 100%; height: 260px; object-fit: cover; border-radius: 10px; }
+.modal-close {
+  position: absolute;
+  margin: 0.5rem;
+  right: 0;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+
+/* Contact page spacing */
+.contact-page {
+  padding-top: 2rem;
+}
+.contact-page h2 { margin-top: 0; margin-bottom: 1rem; }
+.contact-page p { margin: 0.75rem 0; }
+ê êì*cascade08
+ìï ïñ*cascade08
+ñò òü*cascade08
+üÊ Ê¨ *cascade08¨Æ*cascade08ÆΩ *cascade08ΩÕÕ– *cascade08–‘*cascade08‘À *cascade08ÀÕ *cascade08ÕŒ*cascade08Œœ *cascade08œ‘*cascade08‘÷ *cascade08÷◊*cascade08◊Ÿ *cascade08Ÿ›*cascade08›‡ *cascade08‡·*cascade08·‚ *cascade08‚„*cascade08„Â *cascade08Â˜*cascade08˜‚ *cascade08‚„*cascade08„Ê *cascade08ÊÛÛÙ *cascade08Ùˆ*cascade08ˆ˜ *cascade08˜˝*cascade08˝∏ *cascade08∏¿*cascade08¿¡ *cascade08¡¬*cascade08¬√ *cascade08√ƒ*cascade08ƒ≈ *cascade08≈Õ*cascade08ÕŒ *cascade08Œœ*cascade08œ– *cascade08–⁄*cascade08⁄€ *cascade08€‹*cascade08‹› *cascade08›‰*cascade08‰Â *cascade08ÂÍ*cascade08Í¯ *cascade08¯˘*cascade08˘£ *cascade08
+£»& 
+»&Ã& 
+Ã&†3 24file:///Users/dam113/Desktop/liquorose/src/index.css
